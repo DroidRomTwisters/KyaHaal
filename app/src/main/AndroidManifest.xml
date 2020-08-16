@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kyahaal">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".kyahaal"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="q">
+        <activity android:name=".contacts.ContactsActivity2"
+            android:parentActivityName=".MainChat.MainActivity"/>
+        <activity android:name=".login.finsihingActivity" />
+        <activity
+            android:name=".login.UserDataActivity"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity
+            android:name=".ui.ChangeUserStatus"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name=".message.MessageActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".settings.StatusActivity" />
+        <activity android:name=".ui.Contactprofilepic" />
+
+        <activity
+            android:name=".ui.ChangeUserName"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name=".settings.UserProfileActivity" />
+        <activity
+            android:name=".ui.ProfilePicActivity"
+            android:parentActivityName=".MainChat.MainActivity" />
+        <activity
+            android:name=".settings.Settings"
+            android:parentActivityName=".MainChat.MainActivity" />
+        <activity
+            android:name=".login.mobileverificationactivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".MainChat.MainActivity"
+            android:launchMode="singleTop"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ui.ContactProfileImageActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

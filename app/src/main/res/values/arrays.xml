@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Settings_Option">
+        <item>Account</item>
+        <item>Chats</item>
+        <item>Notifications</item>
+        <item>Data and Storage</item>
+        <item>Help</item>
+        <item>Invite a friend</item>
+    </string-array>
+    <string-array name="Settings_Option_Description">
+        <item>Privacy,security,change number</item>
+        <item>Theme,wallpapers,chat history</item>
+        <item>Message and group</item>
+        <item>Network usage,auto-download</item>
+        <item>FAQ,contact us</item>
+        <item>Connect with your friends</item>
+
+    </string-array>
+</resources>

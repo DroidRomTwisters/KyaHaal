@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutChat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/txtviewbg"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="2dp"
+        android:text="abcde"
+        android:textColor="#888"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/test_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:paddingBottom="1dp"
+        android:scaleX="1.5"
+        android:src="@drawable/ic_right_chat" />
+
+    <RelativeLayout
+        android:id="@+id/message_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toStartOf="@id/test_arrow"
+        android:background="@drawable/bg_msg_right"
+        android:paddingStart="15dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:maxWidth="200dp"
+            android:text="@string/demo_text"
+            android:textColor="#222"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text"
+            android:layout_toEndOf="@+id/text"
+            android:text="1:30 P.M."
+            android:textColor="#888"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/is_Read_iv"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBottom="@+id/text"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/msg_time"
+            android:src="@drawable/ic_not_yet_sent" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/custon_ripple"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView10"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@+id/profileimage"
+        android:text="@string/your_name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:transitionName="usernametransition"
+        android:visibility="visible" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_default_dp1"
+        android:transitionName="profileimagetransition2">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="17dp"
+        android:scrollHorizontally="true"
+        android:text="TextView"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/ic_done_blue" />
+
+    <TextView
+        android:id="@+id/last_msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/last_seen_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/unread_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/last_seen_time"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/circular_textview"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+
+

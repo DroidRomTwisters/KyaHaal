@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/settings_icon"
+        android:layout_width="18dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="28dp"
+        android:foregroundGravity="center_vertical"
+        app:srcCompat="@drawable/ic_bell" />
+
+    <TextView
+        android:id="@+id/settings_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:paddingStart="50dp"
+        android:text="Arya"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/settings_option_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_option"
+        android:layout_marginTop="0dp"
+        android:padding="4dp"
+        android:paddingStart="50dp"
+        android:textColor="#878686"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

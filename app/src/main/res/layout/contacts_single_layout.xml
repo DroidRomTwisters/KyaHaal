@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/custon_ripple"
+    android:orientation="vertical"
+    android:paddingStart="12dp"
+    android:tag="1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/profileimage"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingEnd="17dp"
+        android:scrollHorizontally="true"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_status"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/profileimage"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:transitionName="usernametransition"
+        app:autoSizeTextType="uniform" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimage"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_default_dp1"
+        android:tag="2"
+        android:transitionName="profileimagetransition2">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+</RelativeLayout>
+
+

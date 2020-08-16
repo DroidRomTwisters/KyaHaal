@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutChat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/txtviewbg"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="2dp"
+        android:text="abcde"
+        android:textColor="#888"
+        android:textSize="14sp" />
+    <ImageView
+        android:id="@+id/test_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-13dp"
+        android:background="@null"
+        android:scaleX="-1.5"
+        android:src="@drawable/ic_left_chat" />
+
+    <RelativeLayout
+        android:id="@+id/message_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/test_arrow"
+        android:background="@drawable/bg_msg_left"
+        android:paddingStart="15dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:elevation="2dp"
+            android:fontFamily="sans-serif"
+            android:maxWidth="200dp"
+            android:text="@string/demo_text"
+            android:textColor="#222"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text"
+            android:layout_toEndOf="@+id/text"
+            android:text="@string/_1_30_p_m"
+            android:textColor="#888"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            tools:ignore="SmallSp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/edit_text_bg"
+    android:maxWidth="411dp"
+    android:minWidth="411dp" >
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingStart="30dp"
+        android:paddingTop="15dp"
+        android:text="Enter your name"
+        android:textColor="#404040" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Arya"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="83dp"
+        android:background="@drawable/custon_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@android:string/cancel"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/custon_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "794074954982",
+    "firebase_url": "https://kyahaal-rebased.firebaseio.com",
+    "project_id": "kyahaal-rebased",
+    "storage_bucket": "kyahaal-rebased.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794074954982:android:dd55830b39ca201d85cf27",
+        "android_client_info": {
+          "package_name": "com.example.kyahaal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794074954982-eq4rs565vol0aotq2dv589nrl3720vi4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kyahaal",
+            "certificate_hash": "31f3fb0944a0107cff9a55a5d3b77e06ab1dbc37"
+          }
+        },
+        {
+          "client_id": "794074954982-4av6trf87jl7pf24q6dnmmq1hm3hlgth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuSRkt4KKkVJkKadsw064m_pvc-dOc8yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794074954982-4av6trf87jl7pf24q6dnmmq1hm3hlgth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_contacts">Contacts</string>
+    <string name="default_about">**no about**</string>
+    <string-array name="status">
+        <item>Available</item>
+        <item>Busy</item>
+        <item>At Home</item>
+        <item>At College</item>
+        <item>At Movies</item>
+        <item>At Work</item>
+        <item>Battery about to die</item>
+        <item>In a Meeting</item>
+        <item>Sleeping</item>
+        <item>Urgent Call Only</item>
+        <item>Cant talk, KyaHaal only</item>
+    </string-array>
+</resources>

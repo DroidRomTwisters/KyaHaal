@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Settings">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar_layout"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/user_info"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:elevation="3dp"
+            android:src="@drawable/ic_default_dp1"
+            app:civ_border_color="#FF000000"
+            android:transitionName="profileimagetransition"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/profile_image1"
+            android:text="Your Name"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:transitionName="usernametransition"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/profile_image1"
+            android:text="Hey there! I am using KyaHaal"
+            android:textSize="12sp"
+            android:visibility="visible"
+            android:transitionName="statustransition"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
